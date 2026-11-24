@@ -1,6 +1,6 @@
 # How to find the most expensive transactions on Ethereum by gas fee
 
-Over 24 hours (Ethereum blocks 26,448,650 to 26,455,833, 1,847,307 transactions), **the priciest transaction paid 0.4822 ETH in fees for a swap that used only 153,147 gas**. The sender paid 3,148 gwei for it, which is 14,648 times the base fee of its block. The runner-up paid 0.4720 ETH the opposite way, 4.2M gas at 112 gwei.
+Over 24 hours (Ethereum blocks 26,448,650 to 26,455,833, 1,847,307 transactions), **the priciest transaction paid 0.4822 ETH in fees for a swap that used 153,147 gas**. The sender paid 3,148 gwei for it, which is 14,648 times the base fee of its block. The runner-up paid 0.4720 ETH the opposite way, 4.2M gas at 112 gwei.
 
 | # | Fee | Gas used | Gas price | Times the base fee |
 | --- | --- | --- | --- | --- |
