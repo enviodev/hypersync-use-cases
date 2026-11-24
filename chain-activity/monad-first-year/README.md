@@ -18,30 +18,32 @@ Zooming out ten times at a time from the launch block:
 
 ## Apps by wallets (`apps.py`)
 
-The distinct wallets that sent a transaction to each app's main contracts in the first year. Contract names come from Monad's protocol registry ([monad-crypto/protocols](https://github.com/monad-crypto/protocols)) and the Monad dApp list. One router with 152,782 wallets has no public name, so it is listed as unnamed.
+The distinct wallets that sent a transaction to any of an app's contracts in the first year, from the launch block 37,700,069 to block 125,021,856. The contracts for each app come from Monad's protocol registry ([monad-crypto/protocols](https://github.com/monad-crypto/protocols)) and the Monad dApp list, and are listed in `apps.json`. The full scan covered 2,108 contracts across 222 apps.
 
-| App | Wallets in the first year |
-| --- | --- |
-| Nad.fun | 2,427,905 |
-| Unnamed router | 152,782 |
-| Uniswap | 142,725 |
-| Matcha | 140,455 |
-| FastLane (shMonad) | 127,240 |
-| Pinot Finance | 109,564 |
-| Lumiterra | 85,704 |
-| PancakeSwap | 84,487 |
-| GMGN | 57,619 |
-| LI.FI | 47,117 |
-| OpenSea | 45,975 |
+| # | App | Wallets in the first year |
+| --- | --- | --- |
+| 1 | Nad.fun | 2,431,633 |
+| 2 | Uniswap | 221,787 |
+| 3 | FastLane | 209,890 |
+| 4 | Matcha | 140,485 |
+| 5 | Pinot Finance | 109,663 |
+| 6 | LeverUp | 92,574 |
+| 7 | Lumiterra | 87,947 |
+| 8 | Pancake | 85,760 |
+| 9 | Relay | 61,673 |
+| 10 | OpenSea | 58,088 |
+| 11 | GMGN | 57,619 |
 
-Nad.fun had more than twice the wallets of the next ten apps combined (993,668), and 54% of all 4,483,033 sending addresses in the first year used it. Tokens (USDC, WMON, meme tokens) and plain deposit addresses are not apps, so they are left out.
+Nad.fun had more than twice the wallets of the next nine apps combined (1,067,867), and 54% of all 4,483,033 sending addresses in the first year used it.
+
+What counts as an app: FastLane includes shMON and LeverUp includes LVMON, their staked MON tokens, since staking is part of each product. Two things are left out. Canonical Contracts (WMON, contract deployers and account abstraction entry points) is shared infrastructure, not an app. One unverified router with 152,782 wallets has no name in any registry, has no code on other chains and has had no activity for 20 days, so it can't be named as an app.
 
 ```
 python3 apps.py                    # the first year, 8 workers
 python3 apps.py FROM TO            # a fixed block range
 ```
 
-To count your own app, add its name and contract addresses to the `APPS` dict at the top of `apps.py` and run it again.
+To count your own app, add it to `apps.json` as `"Name": ["0x..."]` and run `apps.py` again.
 
 ## Why it's interesting
 

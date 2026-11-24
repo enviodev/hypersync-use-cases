@@ -1,4 +1,4 @@
-# Monad's first year by app: count the distinct wallets that sent a transaction to each app's main contracts, with Envio HyperSync.
+# Monad's first year by app: count the distinct wallets that sent a transaction to any of each app's contracts, with Envio HyperSync.
 # Python 3.9+ standard library only. Set ENVIO_API_TOKEN first.
 # Usage: python3 apps.py            the first year (launch block to the one-year mark), 8 workers
 #        python3 apps.py FROM TO    a fixed block range
@@ -19,19 +19,10 @@ HEADERS = {"Authorization": "Bearer " + TOKEN, "Content-Type": "application/json
 LAUNCH_BLOCK, ONE_YEAR_END = 37_700_069, 125_021_857
 SHARD = 1_000_000
 
-APPS = {
-    "Nad.fun": ["0x0b79d71ae99528d1db24a4148b5f4f865cc2b137", "0x6f6b8f1a20703309951a5127c45b49b1cd981a22", "0x8986c8fd44eb85294a725a7e61af35e76ba26f91"],
-    "Unnamed router": ["0x81b8e2832d00381449223d9874f041114ebd36b8"],
-    "Uniswap": ["0x0d97dc33264bfc1c226207428a79b26757fb9dc3", "0xfdf682f51fe81aa4898f0ae2163d8a55c127fbc7"],
-    "Matcha": ["0x0000000000001ff3684f28c67538d4d072c22734"],
-    "FastLane (shMonad)": ["0x1b68626dca36c7fe922fd2d55e4f631d962de19c"],
-    "Pinot Finance": ["0x252b9c1a6c9867a514ea70fe9bbb23621acc1a50"],
-    "Lumiterra": ["0xda4b24b5e1547d04ab9e4910a747f2d7f893d5ab"],
-    "PancakeSwap": ["0x21114915ac6d5a2e156931e20b20b038ded0be7c", "0x23682a588cf2601aca977df200938634c9f7d552", "0x1b81d678ffb9c0263b24a97847620c99d213eb14"],
-    "GMGN": ["0xc9ca80b5ea956afa98627963d1880033545d108e"],
-    "LI.FI": ["0x026f252016a7c47cdef1f05a3fc9e20c92a49c37", "0x3c6b2e0b7421254846c53c118e24c65d59eae75e"],
-    "OpenSea": ["0x00005ea00ac477b1030ce78506496e8c2de24bf5"],
-}
+# Every contract listed for each app in Monad's protocol registry and the Monad dApp list (apps.json).
+# Add your own app to apps.json as "Name": ["0x...", "0x..."] and run the script again.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "apps.json")) as f:
+    APPS = {app: [a.lower() for a in addrs] for app, addrs in json.load(f).items()}
 OWNER = {a: app for app, addrs in APPS.items() for a in addrs}
 
 
