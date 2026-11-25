@@ -9,6 +9,7 @@ Scripts for tokenized funds and real-world assets. Track Treasury funds, money m
 | [spiko-safo](spiko-safo) | Ethereum, Arbitrum, Polygon, Base | Track Spiko SAFO supply and holders by chain and share class |
 | [grove-basin-jtrsy](grove-basin-jtrsy) | Ethereum | Pull every Grove Basin swap of JTRSY into USDC |
 | [paxg-on-morpho-base](paxg-on-morpho-base) | Base | Track USDC borrowed against Paxos Gold (PAXG) on Morpho |
+| [tokenized-gold-ethereum](tokenized-gold-ethereum) | Ethereum | Track tokenized gold (PAXG and XAUT) on Ethereum in ounces, tonnes and holders |
 
 ### Also on Solana
 

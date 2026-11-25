@@ -65,6 +65,7 @@ Every folder has its own README with what we found, what the script pulls, how t
 | [spiko-safo](rwa-and-funds/spiko-safo) | Ethereum, Arbitrum, Polygon, Base | Track Spiko SAFO supply and holders by chain and share class |
 | [grove-basin-jtrsy](rwa-and-funds/grove-basin-jtrsy) | Ethereum | Pull every Grove Basin swap of JTRSY into USDC |
 | [paxg-on-morpho-base](rwa-and-funds/paxg-on-morpho-base) | Base | Track USDC borrowed against Paxos Gold (PAXG) on Morpho |
+| [tokenized-gold-ethereum](rwa-and-funds/tokenized-gold-ethereum) | Ethereum | Track tokenized gold (PAXG and XAUT) on Ethereum in ounces, tonnes and holders |
 
 ### Lending and vaults
 
@@ -89,6 +90,7 @@ Every folder has its own README with what we found, what the script pulls, how t
 | [uniswap-v4-hooks-ethereum](dexs-and-trading/uniswap-v4-hooks-ethereum) | Ethereum | Find every Uniswap v4 pool with a hook on Ethereum |
 | [uniswap-v4-share-ethereum](dexs-and-trading/uniswap-v4-share-ethereum) | Ethereum | Count every Uniswap v2, v3 and v4 swap on Ethereum month by month |
 | [uniswap-airdrop-holders](dexs-and-trading/uniswap-airdrop-holders) | Ethereum | Find which wallets from the 2020 UNI airdrop still hold UNI |
+| [variational-omni-pools](dexs-and-trading/variational-omni-pools) | Arbitrum | Count every Variational Omni settlement pool and new user on Arbitrum |
 | [uniswap-v4-hooks-robinhood](dexs-and-trading/uniswap-v4-hooks-robinhood) | Robinhood Chain | Find every Uniswap v4 pool and swap by hook |
 | [1inch-aqua-strategies](dexs-and-trading/1inch-aqua-strategies) | 15 EVM chains | Pull every strategy created on 1inch Aqua |
 | [aero-pools-arbitrum](dexs-and-trading/aero-pools-arbitrum) | Arbitrum | Rank every Aero pool on Arbitrum by volume and liquidity |
