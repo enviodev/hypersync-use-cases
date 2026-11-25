@@ -5,3 +5,4 @@ __pycache__/
 **/kamino_rwa.json
 **/arbitrum_priority_fees.json
 **/summary-*.json
+.uniswap_pools.json

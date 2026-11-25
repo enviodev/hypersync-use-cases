@@ -7,6 +7,7 @@ Scripts for DEXs, perps and prediction markets. Pull every swap, pool and positi
 | [uniswap-robinhood-chain](uniswap-robinhood-chain) | Robinhood Chain | Pull every Uniswap v2, v3 and v4 swap on Robinhood Chain |
 | [uniswap-volatilepair-robinhood](uniswap-volatilepair-robinhood) | Robinhood Chain | Get swaps, volume and LP fees for one Uniswap pool |
 | [uniswap-v4-hooks-ethereum](uniswap-v4-hooks-ethereum) | Ethereum | Find every Uniswap v4 pool with a hook on Ethereum |
+| [uniswap-v4-share-ethereum](uniswap-v4-share-ethereum) | Ethereum | Count every Uniswap v2, v3 and v4 swap on Ethereum month by month |
 | [uniswap-v4-hooks-robinhood](uniswap-v4-hooks-robinhood) | Robinhood Chain | Find every Uniswap v4 pool and swap by hook |
 | [aero-pools-arbitrum](aero-pools-arbitrum) | Arbitrum | Rank every Aero pool on Arbitrum by volume and liquidity |
 | [1inch-aqua-strategies](1inch-aqua-strategies) | 15 EVM chains | Pull every strategy created on 1inch Aqua |
