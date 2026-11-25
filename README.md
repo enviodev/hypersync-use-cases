@@ -47,6 +47,7 @@ Every folder has its own README with what we found, what the script pulls, how t
 | [tokenized-stocks-ethereum](tokenized-stocks/tokenized-stocks-ethereum) | Ethereum | Track every Ondo Global Markets and xStocks token transfer on Ethereum |
 | [tokenized-circle-stock](tokenized-stocks/tokenized-circle-stock) | EVM chains | Find tokenized Circle (CRCL) stock on every chain, by issuer |
 | [ondo-stocks-by-chain](tokenized-stocks/ondo-stocks-by-chain) | Ethereum, BNB Chain, HyperEVM, Robinhood Chain | Pull every Ondo stock and ETF token transfer, by chain |
+| [coinbase-stocks-base-market-hours](tokenized-stocks/coinbase-stocks-base-market-hours) | Base | Find who moves Coinbase stock tokens on Base while Wall Street is closed |
 | [ondo-stocks-robinhood](tokenized-stocks/ondo-stocks-robinhood) | Robinhood Chain | Pull every Uniswap v4 swap in Ondo tokenized stock pools |
 | [uniswap-stock-tokens-after-hours](tokenized-stocks/uniswap-stock-tokens-after-hours) | Robinhood Chain | Split stock token swaps on Uniswap by US market hours |
 | [pancakeswap-robinhood-stock-traders](tokenized-stocks/pancakeswap-robinhood-stock-traders) | Robinhood Chain | Count the wallets swapping stock tokens on PancakeSwap |
